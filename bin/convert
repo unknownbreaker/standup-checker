@@ -1,0 +1,7 @@
+#! /bin/sh
+
+file=$1
+executable_file=${file/\.js/''}
+touch "$executable_file"
+echo "#! /bin/sh\n\necho \$(node-jxa ~/Documents/Repos/Configs/KeyboardMaestro/jxa/standup-checker/dist/standup-checker.js)" >> $executable_file
+chmod +x $executable_file
