@@ -27,8 +27,8 @@ switch (moment().month()) {
     weeksNeeded.weds.push(...[2, 4]);
     break;
   case 10:
-    weeksNeeded.thurs.push([1, 3]);
-    weeksNeeded.weds.push([2, 4]);
+    weeksNeeded.thurs.push(...[1, 3]);
+    weeksNeeded.weds.push(...[2, 4]);
     break;
   case 11:
     weeksNeeded.thurs.push(...[1, 3, 5]);
