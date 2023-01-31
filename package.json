@@ -9,7 +9,7 @@
     "build": "yarn clear && parcel build && ./bin/convert ./dist/standup-checker.js",
     "build:global": "yarn build && cp ./dist/standup-checker /usr/local/bin/",
     "watch": "parcel watch",
-    "clear": "rm ./dist/standup-checker*"
+    "clear": "rm -f ./dist/*"
   },
   "dependencies": {
     "moment": "^2.29.4"
